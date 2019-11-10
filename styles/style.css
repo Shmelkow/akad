@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #60606e;
@@ -140,6 +151,17 @@ ul, ol {
 
 }
 
+.ba-benefit__icon svg {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    color: #fff;
+}
+
+.ba-benefit__icon:hover svg {
+    color: red;
+}
+
 .ba-team-member {
     width: 100%;
     height: 333px;
@@ -153,6 +175,8 @@ ul, ol {
     display: block;
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .ba-team-member__info {
@@ -160,13 +184,103 @@ ul, ol {
     height: 100%;
     position: absolute;
     top: -100%;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     background-color: rgba(123, 238, 199, 0.78);
     transition: transform .4s;
 }
 
+.ba-team-member__info svg {
+    fill: #fff;
+}
+
+.ba-team-member__name {
+    margin: 0;
+}
+
+.ba-team-member__position {
+    margin: 0;
+}
+
 .ba-team-member:hover .ba-team-member__info{
     transform: translateY(100%);
+}
+
+
+.ba-footer {
+    background-color: #7beec7;
+    padding: 50px 0;
+}
+
+.ba-footer__title {
+    color: #fff;
+    font-size: 1.875rem;
+}
+
+.ba-subscribe {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.ba-subscribe__title {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.ba-subscribe-form {
+    display: flex;
+}
+
+.ba-input {
+    height: 50px;
+    padding: 1em;
+    border: 1px solid #c1c1c1;
+    border-right: none;
+    flex-grow: 1
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #c1c1c1;
+    text-transform: uppercase;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #c1c1c1;
+    text-transform: uppercase;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #c1c1c1;
+    text-transform: uppercase;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #c1c1c1;
+    text-transform: uppercase;
+  }
+
+.ba-btn {
+    display: inline-block;
+    min-width: 140px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: none;
+    color: #7beec7;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 2em;
+    transition: .4s;
+}
+
+.ba-btn_green {
+    background-color: #7beec7;
+    color: #fff;
+}
+
+.ba-btn:hover {
+    opacity: .8;
 }
