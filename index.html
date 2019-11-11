@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/style.css">
    
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -23,13 +22,21 @@
                     <a href="#" class="ba-logo__link">akad.</a>
                 </h1>
 
-                <nav hidden>
+                <input type="checkbox" id="menuOpen" class="visually-hidden">
+
+                <label for="menuOpen" class="ba-menu-btn" aria-label="open menu">
+                    <span class="ba-menu-btn__line"></span>
+                    <span class="ba-menu-btn__line"></span>
+                    <span class="ba-menu-btn__line"></span>
+                </label>
+
+                <nav class="ba-menu-block">
                     <ul class="ba-menu">
                         <li class="ba-menu__item">
                             <a href="#" class="ba-menu__link">item 1</a>
                         </li>
                         <li class="ba-menu__item">
-                            <a href="#" class="ba-menu__link">item 2/a>
+                            <a href="#" class="ba-menu__link">item 2</a>
                         </li>
                         <li class="ba-menu__item">
                             <a href="#" class="ba-menu__link">item 3</a>
@@ -40,11 +47,6 @@
                     </ul>
                 </nav>
 
-                <button class="ba-menu-btn" aria-label="open menu">
-                    <span class="ba-menu-btn__line"></span>
-                    <span class="ba-menu-btn__line"></span>
-                    <span class="ba-menu-btn__line"></span>
-                </button>
             </div>
                 
         </div>
@@ -360,7 +362,7 @@
                     </div>
                     <div class="ba-col-3">
                         <div class="ba-team-member">
-                            <img src="images/image.png" alt="Monica" class="ba-team-member__img">
+                            <img src="images/image.jpg" alt="Monica" class="ba-team-member__img">
                         
                             <div class="ba-team-member__info">
                                 <div>
