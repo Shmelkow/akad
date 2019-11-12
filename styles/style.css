@@ -108,7 +108,7 @@ ul, ol {
     transform: translateY(-2.5em) scale(1.3);
     /*transition-delay: 1.6s;*/
     transition: transform 1s ease, opacity .2s;
-    transition-timing-function: cubic-bezier(0.01, 1.16, 0.68, -0.93);
+    /*transition-timing-function: cubic-bezier(0.01, 1.16, 0.68, -0.93);*/
 }
 
 .ba-menu__item::after {
@@ -142,8 +142,29 @@ ul, ol {
     transition-delay: 1.45s;
 }
 
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:nth-child(1)::after {
+    transform: translateX(200%);
+    transition: transform .75s ease;
+    transition-delay: 1.2s;
+}
 
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:nth-child(2)::after {
+    transform: translateX(200%);
+    transition: transform .75s ease;
+    transition-delay: 1.5s;
+}
 
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:nth-child(3)::after {
+    transform: translateX(200%);
+    transition: transform .75s ease;
+    transition-delay: 2s;
+}
+
+#menuOpen:checked ~ .ba-menu-block .ba-menu__item:nth-child(4)::after {
+    transform: translateX(200%);
+    transition: transform .75s ease;
+    transition-delay: 2.5s;
+}
 
 .ba-header {
     position: absolute;
