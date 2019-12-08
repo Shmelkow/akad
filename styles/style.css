@@ -290,6 +290,11 @@ ul, ol {
     position: relative;
 }
 
+/* .ba-team-member__active {
+    border: 3px solid red;
+} */
+
+
 .ba-team-member__img {
     display: block;
     height: 100%;
